@@ -1,3 +1,4 @@
+```yaml
 name: Basic CI (no MATLAB required)
 
 on:
