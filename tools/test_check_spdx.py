@@ -1,10 +1,10 @@
 ```python
 #!/usr/bin/env python3
 """
-工具：检查仓库内 .m 文件（可扩展）是否包含 SPDX-License-Identifier 或显式 License 字段。
-用法（本地/CI）：
+Tool: Check if .m files (extensible) in the repository contain SPDX-License-Identifier or explicit License field.
+Usage (local/CI):
   python3 tools/check_spdx.py [path]
-若检测到缺失则以非 0 状态码退出。
+If missing is detected, exit with non-zero status code.
 """
 import os
 import re
@@ -12,13 +12,13 @@ import sys
 
 SPDX_RE = re.compile(r"SPDX-License-Identifier", re.IGNORECASE)
 LICENSE_WORD_RE = re.compile(r"\blicense\b", re.IGNORECASE)
-EXTENSIONS = [".m", ".mlx"]  # 可以按需扩展
+EXTENSIONS = [".m", ".mlx"]  # Can be extended as needed
 
 def check_file(path):
     try:
         with open(path, "r", encoding="utf-8", errors="ignore") as f:
             lines = []
-            # 读取前 12 行（包含空行）用于检测
+            # Read first 12 lines (including blank lines) for detection
             for _ in range(12):
                 l = f.readline()
                 if not l:
