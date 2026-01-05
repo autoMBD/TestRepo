@@ -1,23 +1,23 @@
 ---
 name: Pull Request
-about: 提交变更并请求合并
+about: Submit changes and request merge
 ---
 
-## 变更类型
-- [ ] feat: 新功能
-- [ ] fix: 修复
-- [ ] docs: 文档
-- [ ] chore: 维护
-- [ ] test: 测试
+## Change Type
+- [ ] feat: new feature
+- [ ] fix: fix
+- [ ] docs: documentation
+- [ ] chore: maintenance
+- [ ] test: test
 
-## 变更描述
-请简要说明本次变更做了什么，以及为什么需要它。
+## Change Description
+Please briefly describe what this change does and why it is needed.
 
-## 关联 issue
+## Related Issue
 Fixes # (issue number)
 
-## 测试
-- [ ] 已添加/更新单元测试
-- [ ] CI 通过
+## Testing
+- [ ] Unit tests added/updated
+- [ ] CI passes
 
-## 其他说明
+## Other Notes

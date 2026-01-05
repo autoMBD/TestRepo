@@ -7,18 +7,18 @@ assignees: ''
 
 ---
 
-**描述你遇到的问题**
-简要说明问题是什么。
+**Describe the issue you encountered**
+Briefly describe what the problem is.
 
-**复现步骤**
-1. 步骤一
-2. 步骤二
-3. 期望结果 vs 实际结果
+**Reproduction Steps**
+1. Step one
+2. Step two
+3. Expected result vs actual result
 
-**环境**
-- 操作系统：
-- 版本/commit：
-- 其他信息（日志/stack trace）
+**Environment**
+- Operating System:
+- Version/Commit:
+- Other information (logs/stack trace)
 
-**附加信息**
-日志/截图/最小可复现示例
+**Additional Information**
+Logs/screenshots/minimal reproducible example
