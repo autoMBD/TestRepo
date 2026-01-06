@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 [![CI](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml/badge.svg)](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml)
+[![Downloads](https://img.shields.io/github/downloads/autoMBD/TestRepo/total)](https://github.com/autoMBD/TestRepo/releases)
 [![Contributors](https://img.shields.io/github/contributors/autoMBD/AMBD-MC)](#contributors)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen)](#docs)
 
