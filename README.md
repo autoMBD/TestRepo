@@ -1,7 +1,7 @@
 # AMBD-MC
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
-[![CI](https://github.com/autoMBD/AMBD-MC/actions/workflows/ci.yml/badge.svg)](#ci)
+[![CI](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml/badge.svg)](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml)
 [![Contributors](https://img.shields.io/github/contributors/autoMBD/AMBD-MC)](#contributors)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen)](#docs)
 
