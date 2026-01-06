@@ -1,9 +1,7 @@
-```python
-#!/usr/bin/env python3
 """
 Tool: Check if .m files (extensible) in the repository contain SPDX-License-Identifier or explicit License field.
 Usage (local/CI):
-  python3 tools/check_spdx.py [path]
+  python3 tools/test_check_spdx.py [path]
 If missing is detected, exit with non-zero status code.
 """
 import os
