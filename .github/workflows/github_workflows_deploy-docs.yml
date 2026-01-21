@@ -27,11 +27,16 @@ jobs:
         run: |
           mkdocs build
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Check links (optional)
         run: |
-          pip install lychee-action
-          # lychee CLI 可用作 link checker；按需替换为 markdown-link-check
-          # lychee ./site || true
+          npm install -g markdown-link-check
+          # 检查docs目录下的所有markdown文件，忽略错误
+          find ./docs -name "*.md" -exec markdown-link-check {} \; || true
 
   deploy:
     needs: build
