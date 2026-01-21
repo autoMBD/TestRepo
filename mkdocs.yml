@@ -33,6 +33,5 @@ markdown_extensions:
   - pymdownx.tabbed
 plugins:
   - search
-  - git-revision-date-localized:
-      enable: true
+  - git-revision-date-localized
   - mkdocs-simple-hooks
