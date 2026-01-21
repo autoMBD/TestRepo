@@ -38,12 +38,22 @@ jobs:
           # 检查docs目录下的所有markdown文件，忽略错误
           find ./docs -name "*.md" -exec markdown-link-check {} \; || true
 
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: ./site
+          retention-days: 1
+
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'pull_request' && github.base_ref == 'main')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
