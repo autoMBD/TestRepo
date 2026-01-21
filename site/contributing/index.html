@@ -1,0 +1,2054 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="TestRepo — 模型与工具文档">
+      
+      
+        <meta name="author" content="autoMBD">
+      
+      
+      
+        <link rel="prev" href="../api/">
+      
+      
+        <link rel="next" href="../changelog/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Contributing - TestRepo Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TestRepo Docs" class="md-header__button md-logo" aria-label="TestRepo Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TestRepo Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contributing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/autoMBD/TestRepo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    autoMBD/TestRepo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TestRepo Docs" class="md-nav__button md-logo" aria-label="TestRepo Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TestRepo Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/autoMBD/TestRepo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    autoMBD/TestRepo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/tutorial-quick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/tutorial-advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/MODEL_A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MODEL_A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        行为准则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何开始贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何开始贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：了解项目
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：设置开发环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：选择任务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开发流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 创建分支
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 进行更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 提交更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 保持分支更新
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 运行测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 推送更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 创建 Pull Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码规范
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="代码规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试指南
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="测试指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单元测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集成测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文档贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        添加新文档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        审查流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="审查流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作为贡献者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作为审查者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR 合并条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发布流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        版本号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社区角色
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="社区角色">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        贡献者级别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何成为核心贡献者
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        获取帮助
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="获取帮助">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沟通渠道
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        许可证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        致谢
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        行为准则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何开始贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何开始贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：了解项目
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：设置开发环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：选择任务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开发流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 创建分支
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 进行更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 提交更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 保持分支更新
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 运行测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 推送更改
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 创建 Pull Request
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码规范
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="代码规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        测试指南
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="测试指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单元测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集成测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文档贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        添加新文档
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        审查流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="审查流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作为贡献者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作为审查者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PR 合并条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发布流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        版本号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社区角色
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="社区角色">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        贡献者级别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何成为核心贡献者
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        获取帮助
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="获取帮助">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沟通渠道
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        许可证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        致谢
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">贡献指南<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>欢迎您为项目做出贡献！本文档将指导您如何参与项目开发。</p>
+<h2 id="_2">行为准则<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>参与本项目，您需要遵守我们的行为准则：
+- 尊重所有贡献者，无论其经验水平、性别、性取向、残疾、种族、宗教等
+- 使用友好和包容的语言
+- 尊重不同的观点和经验
+- 建设性地接受批评
+- 关注对社区最有利的事情
+- 对其他社区成员表现出同理心</p>
+<h2 id="_3">如何开始贡献<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">第一步：了解项目<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>阅读项目文档，特别是 <a href="../README.md">README</a> 和 <a href="../architecture/">架构文档</a></li>
+<li>查看现有的 <a href="https://github.com/your-username/your-project/issues">Issues</a> 和 <a href="https://github.com/your-username/your-project/pulls">Pull Requests</a></li>
+<li>加入我们的 <a href="https://github.com/your-username/your-project/discussions">讨论区</a> 了解项目动态</li>
+</ol>
+<h3 id="_5">第二步：设置开发环境<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Fork 项目仓库</li>
+<li>克隆您的 fork：
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/your-username/your-project.git
+<span class="nb">cd</span><span class="w"> </span>your-project
+</code></pre></div></li>
+<li>设置上游远程：
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>https://github.com/original-owner/your-project.git
+</code></pre></div></li>
+<li>安装开发依赖：
+   <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+</code></pre></div></li>
+<li>运行测试确保一切正常：
+   <div class="highlight"><pre><span></span><code>pytest<span class="w"> </span>tests/
+</code></pre></div></li>
+</ol>
+<h3 id="_6">第三步：选择任务<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>初学者友好</strong>: 查看标签为 <code>good-first-issue</code> 的 Issues</li>
+<li><strong>文档改进</strong>: 标签为 <code>documentation</code> 的 Issues</li>
+<li><strong>错误修复</strong>: 标签为 <code>bug</code> 的 Issues</li>
+<li><strong>功能开发</strong>: 标签为 <code>enhancement</code> 的 Issues</li>
+</ul>
+<p>如果您有新的想法，请先在 Issues 中讨论，获得认可后再开始实现。</p>
+<h2 id="_7">开发流程<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 创建分支<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 同步主分支</span>
+git<span class="w"> </span>fetch<span class="w"> </span>upstream
+git<span class="w"> </span>checkout<span class="w"> </span>main
+git<span class="w"> </span>merge<span class="w"> </span>upstream/main
+
+<span class="c1"># 创建功能分支</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/your-feature-name
+<span class="c1"># 或修复分支</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>fix/issue-number-description
+</code></pre></div>
+<p><strong>分支命名规范</strong>:
+- <code>feature/</code> - 新功能
+- <code>fix/</code> - 错误修复
+- <code>docs/</code> - 文档更新
+- <code>test/</code> - 测试相关
+- <code>refactor/</code> - 代码重构
+- <code>style/</code> - 代码格式调整（不影响功能）</p>
+<h3 id="2">2. 进行更改<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>遵循项目的代码风格</li>
+<li>为新增功能编写测试</li>
+<li>更新相关文档</li>
+<li>确保所有测试通过</li>
+</ul>
+<h3 id="3">3. 提交更改<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 添加更改的文件</span>
+git<span class="w"> </span>add<span class="w"> </span>.
+
+<span class="c1"># 提交更改</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;类型(范围): 描述性信息</span>
+
+<span class="s2">详细说明（可选）</span>
+
+<span class="s2">解决: #issue-number&quot;</span>
+</code></pre></div>
+<p><strong>提交信息规范</strong>:
+- <strong>类型</strong>: feat, fix, docs, style, refactor, test, chore
+- <strong>范围</strong>: 影响的模块或文件
+- <strong>描述</strong>: 简明扼要的说明
+- <strong>正文</strong>: 详细说明（可选）
+- <strong>页脚</strong>: 关联的 Issue</p>
+<p><strong>示例</strong>:
+<div class="highlight"><pre><span></span><code>feat(api): 添加用户认证端点
+
+- 添加 POST /auth/login 端点
+- 实现 JWT 令牌生成
+- 添加相关测试用例
+
+解决: #42
+</code></pre></div></p>
+<h3 id="4">4. 保持分支更新<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 获取上游更新</span>
+git<span class="w"> </span>fetch<span class="w"> </span>upstream
+
+<span class="c1"># 合并到当前分支</span>
+git<span class="w"> </span>merge<span class="w"> </span>upstream/main
+<span class="c1"># 或使用变基</span>
+git<span class="w"> </span>rebase<span class="w"> </span>upstream/main
+</code></pre></div>
+<h3 id="5">5. 运行测试<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 运行所有测试</span>
+pytest
+
+<span class="c1"># 运行特定测试</span>
+pytest<span class="w"> </span>tests/test_module.py
+
+<span class="c1"># 运行带覆盖率的测试</span>
+pytest<span class="w"> </span>--cov<span class="o">=</span>your_project<span class="w"> </span>tests/
+
+<span class="c1"># 代码质量检查</span>
+flake8<span class="w"> </span>your_project/
+black<span class="w"> </span>--check<span class="w"> </span>your_project/
+mypy<span class="w"> </span>your_project/
+</code></pre></div>
+<h3 id="6">6. 推送更改<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/your-feature-name
+</code></pre></div>
+<h3 id="7-pull-request">7. 创建 Pull Request<a class="headerlink" href="#7-pull-request" title="Permanent link">&para;</a></h3>
+<ol>
+<li>访问您的仓库页面</li>
+<li>点击 "Compare &amp; pull request"</li>
+<li>填写 PR 模板</li>
+<li>确保 CI 通过</li>
+<li>请求代码审查</li>
+</ol>
+<h2 id="_8">代码规范<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">代码风格<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>遵循 <a href="https://peps.python.org/pep-0008/">PEP 8</a> (Python)</li>
+<li>使用 4 空格缩进</li>
+<li>行长度限制在 88 个字符（使用 Black 格式化）</li>
+<li>导入排序：标准库 → 第三方库 → 本地模块</li>
+</ul>
+<h3 id="_10">文档要求<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>所有公共 API 必须有文档字符串</li>
+<li>使用 Google 风格文档字符串：
+  <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">function_name</span><span class="p">(</span><span class="n">param1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">param2</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;函数简要描述。</span>
+
+<span class="sd">    详细描述（可选）。</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        param1: 参数1的描述</span>
+<span class="sd">        param2: 参数2的描述</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        返回值的描述</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: 当参数无效时</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</code></pre></div></li>
+</ul>
+<h3 id="_11">测试要求<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>测试覆盖率不低于 80%</li>
+<li>每个功能必须有对应的测试</li>
+<li>测试应该独立，不依赖外部状态</li>
+<li>使用有意义的测试名称</li>
+</ul>
+<h2 id="_12">测试指南<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">单元测试<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">your_project.module</span><span class="w"> </span><span class="kn">import</span> <span class="n">your_function</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_your_function_normal_case</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;测试正常情况&quot;&quot;&quot;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">your_function</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">3</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_your_function_edge_case</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;测试边界情况&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+        <span class="n">your_function</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_your_function_with_fixture</span><span class="p">(</span><span class="n">sample_fixture</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;使用 fixture 的测试&quot;&quot;&quot;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">your_function</span><span class="p">(</span><span class="n">sample_fixture</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="n">expected_value</span>
+</code></pre></div>
+<h3 id="_14">集成测试<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_integration_with_database</span><span class="p">(</span><span class="n">db_connection</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;数据库集成测试&quot;&quot;&quot;</span>
+    <span class="c1"># 设置测试数据</span>
+    <span class="n">setup_test_data</span><span class="p">(</span><span class="n">db_connection</span><span class="p">)</span>
+
+    <span class="c1"># 执行测试</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">query_database</span><span class="p">(</span><span class="n">db_connection</span><span class="p">)</span>
+
+    <span class="c1"># 验证结果</span>
+    <span class="k">assert</span> <span class="n">result</span> <span class="o">==</span> <span class="n">expected_data</span>
+
+    <span class="c1"># 清理</span>
+    <span class="n">cleanup_test_data</span><span class="p">(</span><span class="n">db_connection</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_15">性能测试<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">timeit</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_performance</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;性能测试&quot;&quot;&quot;</span>
+    <span class="n">execution_time</span> <span class="o">=</span> <span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span>
+        <span class="s1">&#39;your_function(1000)&#39;</span><span class="p">,</span>
+        <span class="n">setup</span><span class="o">=</span><span class="s1">&#39;from your_project.module import your_function&#39;</span><span class="p">,</span>
+        <span class="n">number</span><span class="o">=</span><span class="mi">1000</span>
+    <span class="p">)</span>
+    <span class="k">assert</span> <span class="n">execution_time</span> <span class="o">&lt;</span> <span class="mf">1.0</span>  <span class="c1"># 1秒内完成1000次执行</span>
+</code></pre></div>
+<h2 id="_16">文档贡献<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="_17">文档结构<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>docs/
+├── index.md              # 首页
+├── getting-started.md    # 快速开始
+├── tutorials/           # 教程
+├── api/                # API 文档
+├── examples/           # 示例
+├── architecture.md     # 架构文档
+└── contributing.md     # 本文档
+</code></pre></div>
+<h3 id="_18">文档标准<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>使用清晰的 Markdown 语法</li>
+<li>包含代码示例</li>
+<li>提供相关链接</li>
+<li>保持文档更新与代码同步</li>
+<li>对于复杂概念，提供图表说明</li>
+</ul>
+<h3 id="_19">添加新文档<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ol>
+<li>在合适的位置创建新文件</li>
+<li>遵循现有的文档结构</li>
+<li>更新相关索引文件</li>
+<li>确保链接正确</li>
+</ol>
+<h2 id="_20">审查流程<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h3 id="_21">作为贡献者<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ol>
+<li>确保 PR 描述清晰</li>
+<li>解决所有 CI 检查失败</li>
+<li>回应审查意见</li>
+<li>保持对话礼貌和专业</li>
+</ol>
+<h3 id="_22">作为审查者<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ol>
+<li>及时响应 PR</li>
+<li>提供建设性反馈</li>
+<li>检查代码质量和测试覆盖</li>
+<li>确保符合项目标准</li>
+</ol>
+<h3 id="pr">PR 合并条件<a class="headerlink" href="#pr" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] 所有 CI 检查通过</li>
+<li>[ ] 代码审查通过</li>
+<li>[ ] 测试覆盖率不降低</li>
+<li>[ ] 文档已更新</li>
+<li>[ ] 符合代码规范</li>
+</ul>
+<h2 id="_23">发布流程<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="_24">版本号<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>遵循 <a href="https://semver.org/lang/zh-CN/">语义化版本</a>：
+- <strong>主版本号</strong>：不兼容的 API 修改
+- <strong>次版本号</strong>：向下兼容的功能性新增
+- <strong>修订号</strong>：向下兼容的问题修正</p>
+<h3 id="_25">发布步骤<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<ol>
+<li>更新 <code>CHANGELOG.md</code></li>
+<li>更新版本号（在 <code>pyproject.toml</code> 或 <code>setup.py</code> 中）</li>
+<li>创建发布分支</li>
+<li>运行完整测试套件</li>
+<li>构建发布包</li>
+<li>创建 GitHub Release</li>
+<li>发布到 PyPI（如果适用）</li>
+</ol>
+<h2 id="_26">社区角色<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<h3 id="_27">贡献者级别<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>新手</strong>: 完成第一个 PR</li>
+<li><strong>活跃贡献者</strong>: 多个有意义的贡献</li>
+<li><strong>核心贡献者</strong>: 对项目有深入了解，有合并权限</li>
+<li><strong>维护者</strong>: 负责项目方向和发布</li>
+</ul>
+<h3 id="_28">如何成为核心贡献者<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ol>
+<li>持续贡献高质量代码</li>
+<li>积极参与社区讨论</li>
+<li>帮助审查其他人的 PR</li>
+<li>在 Issues 中帮助其他用户</li>
+<li>维护部分模块或文档</li>
+</ol>
+<h2 id="_29">获取帮助<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h2>
+<h3 id="_30">资源<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<ul>
+<li>📖 <a href="../">项目文档</a></li>
+<li>💬 <a href="https://github.com/your-username/your-project/discussions">讨论区</a></li>
+<li>🐛 <a href="https://github.com/your-username/your-project/issues">Issue 跟踪</a></li>
+<li>📧 邮件列表: project@example.com</li>
+</ul>
+<h3 id="_31">沟通渠道<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>一般问题</strong>: GitHub Discussions</li>
+<li><strong>错误报告</strong>: GitHub Issues</li>
+<li><strong>安全漏洞</strong>: security@example.com（非公开）</li>
+<li><strong>实时讨论</strong>: Discord/Slack（如果设置）</li>
+</ul>
+<h2 id="_32">许可证<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
+<p>贡献者同意其贡献将在项目的许可证下发布。当前项目使用 <a href="../LICENSE">MIT 许可证</a>。</p>
+<h2 id="_33">致谢<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h2>
+<p>感谢所有为项目做出贡献的人！您的每一点贡献都让项目变得更好。</p>
+<hr />
+<p><em>本文档受 <a href="https://github.com/opencollective/opensource-template">开源贡献指南模板</a> 启发</em></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 6, 2026 15:06:29 UTC">January 6, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
