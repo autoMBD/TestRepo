@@ -9,7 +9,7 @@ nav:
   - Tutorials:
       - Quick Tutorial: tutorials/tutorial-quick.md
       - Advanced: tutorials/tutorial-advanced.md
-  - Examples: examples/index.md
+  - Examples: examples/example1.md
   - Models:
       - MODEL_A: models/MODEL_A.md
   - API: api/index.md
@@ -33,4 +33,3 @@ markdown_extensions:
   - pymdownx.tabbed
 plugins:
   - search
-  - git-revision-date-localized
