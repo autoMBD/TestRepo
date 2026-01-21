@@ -1,4 +1,4 @@
-# Contributing to AMBD-MC
+# Contributing to TestRepo
 
 Thank you for your interest and contributions! To ensure high-quality collaboration, please follow the process below.
 

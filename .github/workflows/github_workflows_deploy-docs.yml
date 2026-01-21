@@ -1,0 +1,49 @@
+name: Build and deploy docs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material mkdocs-git-revision-date-localized mkdocs-simple-hooks pymdown-extensions
+
+      - name: Build docs
+        run: |
+          mkdocs build
+
+      - name: Check links (optional)
+        run: |
+          pip install lychee-action
+          # lychee CLI 可用作 link checker；按需替换为 markdown-link-check
+          # lychee ./site || true
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./site
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
