@@ -46,12 +46,3 @@ jobs:
           else
             echo "No tests/ directory found, skipping pytest."
           fi
-
-      - name: Build docs if mkdocs.yml exists
-        run: |
-          if [ -f "mkdocs.yml" ]; then
-            python -m pip install mkdocs
-            mkdocs build
-          else
-            echo "No mkdocs.yml, skipping docs build."
-          fi

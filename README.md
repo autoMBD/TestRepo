@@ -1,8 +1,9 @@
-# AMBD-MC
+# TestRepo
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 [![CI](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml/badge.svg)](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml)
-[![Contributors](https://img.shields.io/github/contributors/autoMBD/AMBD-MC)](#contributors)
+[![Downloads](https://img.shields.io/github/downloads/autoMBD/TestRepo/total)](https://github.com/autoMBD/TestRepo/releases)
+[![Contributors](https://img.shields.io/github/contributors/autoMBD/TestRepo)](#contributors)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen)](#docs)
 
 简短一句话描述项目核心价值与场景。
@@ -15,8 +16,8 @@
 ## 快速开始（3 步）
 1. 克隆仓库
    ```bash
-   git clone https://github.com/autoMBD/AMBD-MC.git
-   cd AMBD-MC
+   git clone https://github.com/autoMBD/TestRepo.git
+   cd TestRepo
    ```
 2. 安装依赖（举例）
    ```bash
