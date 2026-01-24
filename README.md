@@ -4,7 +4,7 @@
 [![CI](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml/badge.svg)](https://github.com/autoMBD/TestRepo/actions/workflows/github_workflows_ci.yml)
 [![Downloads](https://img.shields.io/github/downloads/autoMBD/TestRepo/total)](https://github.com/autoMBD/TestRepo/releases)
 [![Contributors](https://img.shields.io/github/contributors/autoMBD/TestRepo)](#contributors)
-[![Docs](https://img.shields.io/badge/docs-available-brightgreen)](#docs)
+[![Docs](https://img.shields.io/badge/docs-available-brightgreen)](https://autombd.github.io/TestRepo/)
 
 简短一句话描述项目核心价值与场景。
 
@@ -34,7 +34,7 @@
 （添加一个简短示例输出或 GIF）
 
 ## 文档
-完整文档见：docs/（或 GitHub Pages 链接）
+[完整文档见戳这里](https://autombd.github.io/TestRepo/)
 
 ## 贡献
 欢迎贡献！请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
